@@ -39,18 +39,6 @@ header{
 	font-weight: 600;
 	letter-spacing: 1px;
 	color: var(--bg-color);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #020202;
-}
-
-.contact{
-    display: inline-block;
-	font-size: 16px;
-	padding: 15px 30px;
-	background: #e49610bf;
-	color: var(--main-color);
-	border-radius: 4px;
-	transition: ease .40s;
 }
 
 .navbar{
@@ -157,7 +145,7 @@ input[type="name"]{
 	display: inline-block;
 	width: 100%;
 	padding: 20px 150px 20px 30px;
-	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	box-shadow: 5px 10px 30px rgba(37, 37, 37, 0.2);
 	outline: none;
 	border: none;
 	border-radius: 15px;
@@ -167,7 +155,7 @@ input[type="email"]{
     display: inline-block;
 	width: 100%;
 	padding: 20px 150px 20px 30px;
-	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	box-shadow: 5px 10px 30px  rgba(37, 37, 37, 0.2);
 	outline: none;
 	border: none;
 	border-radius: 15px;
@@ -178,7 +166,7 @@ textarea{
     display: inline-block;
 	width: 100%;
 	padding: 20px 150px 20px 30px;
-	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	box-shadow: 5px 10px 30px  rgba(37, 37, 37, 0.2);
 	outline: none;
 	border: none;
 	border-radius: 15px;
