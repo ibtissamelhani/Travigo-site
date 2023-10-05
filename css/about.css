@@ -34,16 +34,15 @@ header{
 	padding: 30px 5%;
 	transition: ease .40s;
 }
-
 .logo{
 	font-size: 35px;
 	font-weight: 600;
 	letter-spacing: 1px;
 	color: var(--bg-color);
 }
-.tour{
-	border-radius: 2px;
-	background-color: #60c2e9;
+.about{
+    border-radius: 2px;
+	background-color: #f5d279;
 }
 
 .navbar{
@@ -51,7 +50,6 @@ header{
 }
 .navbar a{
 	color: var(--bg-color);
-    color: black;
 	font-size: var(--p-font);
 	font-weight: 500;
 	padding: 10px 22px;
@@ -72,11 +70,14 @@ header{
 	display: none;
 }
 
+section{
+	padding: 80px 18%;
+}
 .home{
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	background: url(../img/T.jpg);
+	background: url(../img/about.jpg);
 	background-size: cover;
 	background-position: center;
 	display: grid;
@@ -92,7 +93,7 @@ header{
 	margin-bottom: 20px;
 }
 .home-text p{
-	color: var(--bg-color);
+	color: white;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 38px;
@@ -103,19 +104,13 @@ header{
 	font-size: 16px;
 	padding: 15px 30px;
 	background: #ffffffbf;
-	color: var(--main-color);
+	color: black;
 	border-radius: 4px;
 	transition: ease .40s;
 }
 .home-btn:hover{
 	background: var(--bg-color);
 	transform: scale(1.1);
-}
-
-
-section{
-
-	padding: 80px 18%;
 }
 header.sticky{
 	background: var(--bg-color);
@@ -133,63 +128,53 @@ header.sticky{
 	font-size: var(--h2-font);
 	line-height: 1.1;
 }
-
-.title{
-	text-align: center;
-}
-.title h2{
-	font-size: var(--h2-font);
-	line-height: 1.2;
-}
-.package-content{
+.row-items{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
 	grid-gap: 2rem;
 	align-items: center;
+	text-align: center;
 	margin-top: 5rem;
 }
-.thum{
-	position: relative;
-	transition: all .3s cubic-bezier(.445,.05,.55,.95);
-	will-change: filter;
+.container-box{
+	background: var(--bg-color);
+	border: 1px solid #f0eded;
+	padding: 50px 10px;
+	border-radius: 4px;
+	transition: all 1s ease 0s;
 	cursor: pointer;
 }
-.thum img{
+.container-img img{
+	height: 85px;
+	width: 85px;
+	padding: 15px;
+	background: var(--bg-color);
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	border-radius: 4px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+.container-img-b img{
 	width: 100%;
-	height: auto;
+	background: var(--bg-color);
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	border-radius: 4px;
+	margin-bottom: 15px;
+	cursor: pointer;
 }
-.thum h3{
-	position: absolute;
-	font-size: 30px;
-	font-weight: 600;
-	text-align: right;
-	color: var(--bg-color);
-	top: 36px;
-	right: 40px;
-}
-.dest-content{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 24px;
-}
-.stars i{
-	color: var(--main-color);
-	font-size: 20px;
-}
-.location h4{
+.container-box h4{
 	font-size: 24px;
 	font-weight: 600;
 	margin-bottom: 8px;
 }
-.location p{
+.container-box p{
 	font-size: 15px;
 	color: var(--second-color);
 }
-.thum:hover{
-	filter: brightness(100%) hue-rotate(45deg);
-	transform: scale(1.04);
+.container-box:hover{
+	box-shadow: 5px 30px 56.1276px rgb(55 55 55 / 12%);
+	border: 1px solid transparent;
+	transform: translateY(-3px);
 }
 
 .destination-content{
@@ -250,6 +235,49 @@ header.sticky{
 	cursor: pointer;
 }
 
+.newsletter{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 3rem;
+}
+.news-text h2{
+	font-size: var(--h2-font);
+	margin-bottom: 5px;
+}
+.news-text p{
+	font-size: var(--p-font);
+	color: var(--second-color);
+	line-height: 30px;
+}
+.newsletter form{
+	max-width: 100%;
+	width: 450px;
+	position: relative;
+}
+.newsletter form input:first-child{
+	display: inline-block;
+	width: 100%;
+	padding: 20px 150px 20px 30px;
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	outline: none;
+	border: none;
+	border-radius: 15px;
+}
+.newsletter form input:last-child{
+	display: inline-block;
+	position: absolute;
+	outline: none;
+	border: none;
+	padding: 14px 30px;
+	border-radius: 15px;
+	background: var(--main-color);
+	color: var(--bg-color);
+	top: 6px;
+	right: 6px;
+	cursor: pointer;
+}
 
 #contact{
 	background: var(--main-color);

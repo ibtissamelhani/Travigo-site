@@ -31,7 +31,7 @@ header{
 	align-items: center;
 	justify-content: space-between;
 	background: transparent;
-	padding: 30px 18%;
+	padding: 30px 5%;
 	transition: ease .40s;
 }
 .logo{
@@ -40,8 +40,12 @@ header{
 	letter-spacing: 1px;
 	color: var(--bg-color);
 
-}
 
+}
+.contact{
+	border-radius: 2px;
+	background-color: #f5d279;
+}
 .navbar{
 	display: flex;
 }
