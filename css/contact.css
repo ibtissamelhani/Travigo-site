@@ -39,6 +39,7 @@ header{
 	font-weight: 600;
 	letter-spacing: 1px;
 	color: var(--bg-color);
+
 }
 
 .navbar{
@@ -126,6 +127,7 @@ header.sticky{
 	align-items: center;
 	justify-content: space-between;
 	grid-gap: 3rem;
+	background-color: #eef0f2;
 }
 .news-text h2{
 	font-size: var(--h2-font);
@@ -140,6 +142,7 @@ header.sticky{
 	max-width: 100%;
 	width: 450px;
 	position: relative;
+	left:50%;
 }
 input[type="name"]{
 	display: inline-block;
@@ -177,7 +180,7 @@ input[type="submit"]{
 	position: absolute;
 	outline: none;
 	border: none;
-	padding: 14px 30px;
+	padding: 15px 30px;
 	border-radius: 15px;
 	background: var(--main-color);
 	color: var(--bg-color);
